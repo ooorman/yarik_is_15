@@ -1,0 +1,75 @@
+* {
+    font-family: 'Open Sans',sans-serif;
+}
+body {
+
+    padding:0;
+    margin:0;
+}
+button {
+    border: none;
+    cursor:pointer;
+}
+button:disabled {
+    cursor:auto;
+    border-color:red;
+}
+#header {
+    text-align:center;
+    line-height:6vh;
+    background:#2e00ff;
+    color:white;
+    font-size:3vh;
+    height:6vh;
+}
+
+
+
+.direction_button {
+    padding: 1vh 2vh;
+    font-size:7vh;
+    border-radius: 1vh;
+    height:15vh;
+    font-weight:700;
+}
+#go_up {
+    background:#38B66C;
+    color:#19572E;
+    box-shadow: 0 2vh #267847;
+}
+#go_down {
+    background:#FE704C;
+    color:#732E21;
+    box-shadow: 0 2vh #AA4B38;
+}
+.label {
+    width:100%;
+    text-align:center;
+    background: #1c0099;
+    border-radius:1vh;
+    font-size:3vh;
+    color:#e3e3e3;
+}
+.choose_btn {
+    padding:1vh;
+    background:#a50000;
+    border:0.5vh solid black;
+    margin:1vh
+}
+.choose_btn_hover:hover {
+    background:red;
+}
+.telegram {
+    font-family: "Open Sans", sans-serif;
+    color:white;
+    font-size:2.5vh;
+}
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+.absolute_center {
+    position:absolute;
+    z-index:1;
+    top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}

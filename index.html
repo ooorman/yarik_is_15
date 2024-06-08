@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/css/styles.css">
+        <script src="static/js/jquery.js"></script>
+        <script src="static/js/chart.js"></script>
+        <script src="static/js/script.js"></script>
+        <title>kak_razbogatetb.ru</title>
+    </head>
+    <body>
+        <img class="miniburger" src="static/images/miniburger.png" style="position: absolute;width:13vh;cursor:pointer;z-index:6">
+        <audio id="sus" src="static/sounds/sus.mp3"></audio>
+        <audio id="nazi" src="static/sounds/nazi.mp3"></audio>
+        <audio id="juice_talk" src="static/sounds/juice_talk.mp3"></audio>
+        <audio id="slap" src="static/sounds/slap.mp3"></audio>
+        <audio id="dada" src="static/sounds/dada.mp3"></audio>
+        <audio id="poko" src="static/sounds/poko.mp3"></audio>
+        <audio id="joker" src="static/sounds/joker.mp3"></audio>
+        <audio id="death" src="static/sounds/death.mp3"></audio>
+        <audio id="sonar" src="static/sounds/sonar.ogg"></audio>
+        <audio id="bitcoin" src="static/sounds/bitcoin.mp3"></audio>
+
+        <audio id="bue" src="static/sounds/yarik/bue.mp3"></audio>
+        <audio id="eu" src="static/sounds/yarik/eu.mp3"></audio>
+        <audio id="oh_no" src="static/sounds/yarik/oh no.mp3"></audio>
+        <audio id="uee" src="static/sounds/yarik/uee.mp3"></audio>
+        <div id="header">
+            1488 способов быстро разбогатеть для школьников и прочей нечисти.
+        </div>
+        <div style="display:flex;gap:3%;padding:1.5vh 3vh">
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh">
+
+                <div class="label">1. Рубить деревья.</div>
+                <div style="border-radius:1vh;overflow:hidden;display:flex;justify-content:center;position:relative;">
+
+                    <img src="static/images/lgbt.png" style="width:100%;height:100%;position:absolute">
+                    <img src="static/images/dub.png" style="height:47vh;z-index:1">
+                    <img src="static/images/axe.png" id="axe" style="position:absolute;z-index:2;height:15vh;top:25vh;left:45vh;cursor:pointer;">
+                    <img src="static/images/china.png" id="china" style="position:absolute;z-index:3;height:100%;width:100%;display:none;">
+
+                </div>
+            </div>
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh">
+                <div class="label">2. Получать бесплатные деньги.</div>
+                <div style="display:flex;flex-direction:column">
+                    <div style="background-color:#182432;border-radius:1vh;overflow:hidden;">
+                        <div style="font-weight:500;background:#E9CD70;height:9vh;font-size:3.5vh;line-height:9vh;text-align:center;">Угадывай, куда пойдёт курс <b>$</b>, и зарабатывай на этом!</div>
+                        <div style="padding:1vh;">
+                            <canvas id="graph" style="width:70%;float:left;height:36vh"></canvas>
+                            <div style="display:flex;flex-direction:column;gap:3vh;margin-top:1vh;padding-bottom:2vh">
+                                <button class="direction_button" id="go_up">BBEPX</button>
+                                <button class="direction_button" id="go_down">ВНИЗ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display:flex;gap:3%;padding:1.5vh 3vh">
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh">
+
+                <div class="label">3. Попросить у джуси ворлда.</div>
+                <div style="border-radius:1vh;display:flex;position:relative;">
+                    <div style="position:absolute;bottom:37vh;z-index:4;display:none;">
+                        <div id="message_juicewrld" style="position:absolute;left:4vh;font-size:2.5vh;width:35vh;top:3.3vh;left:3.5vh;">
+
+                        </div>
+                        <img src="static/images/message.png" style="width:40vh;">
+                    </div>
+                    <img id="juicewrld" src="static/images/juicewrld.jpg" style="height:47vh">
+                    <img id="juicewrld_1" src="static/images/juicewrld_1.jpg" style="height:47vh;display:none;">
+                    <img id="juicewrld_2" src="static/images/juicewrld_2.jpg" style="height:47vh;display:none">
+                    <img id="juicewrld_3" src="static/images/juicewrld_3.jpg" style="height:47vh;display:none">
+                    <div style="display:flex;flex-direction:column;">
+                        <button id="juice_btn_1" class="choose_btn choose_btn_hover" style="font-size:4vh;">Нигерс маст <s>дай</s> дать деньги</button>
+                        <button id="juice_btn_2" class="choose_btn choose_btn_hover" style="font-size:4vh;">Йо, брат, подкинь бабла</button>
+                        <button id="juice_btn_3" class="choose_btn choose_btn_hover" style="font-size:4vh;">О величественный, чья музыка потрясает сознание и сводит с ума! Соблаговолите ли вы мне, рабу покорному вашему, дать some money?</button>
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh">
+                <div class="label">4. Покликать и с шансом <s>0,</s>999% вывести деньги</div>
+                <div style="display:flex;gap:10%;">
+                    <div style="position:relative;">
+                        <img src="static/images/clicker.jpg" style="height:47vh;width:auto;width:30vh">
+                        <div id="minion_money" style="color:white;position:absolute;top:7.5vh;left:13vh;font-weight:800;font-size:2.5vh">0</div>
+                        <img class="on_hover_scale" id="minion" src="static/images/minion.png" style="position:absolute;height:20vh;top:20vh;left:9vh;cursor:pointer;">
+                    </div>
+                    <div style="padding:2vh;width:60%;display:flex;flex-direction:column;position:relative;border:0.5vh solid black;border-radius:2vh;background-image:url('static/images/success.jpg');background-size: 100% 100%;">
+                        <img id="bitcoin_button" src="static/images/bitcoin.png" style="width:10vh;position:absolute;left:1vh;bottom:1vh;cursor:pointer;">
+                        <div id="minion_label" style="text-align:center;font-size:4vh;font-weight:700;">Вывод денег.</div>
+                        <div id="minion_error" style="color:red;font-weight:700;font-size:2vh;margin-top:1vh;background:white;padding:0.5vh;border-radius:1vh;border: 0.4vh solid black;">Вы должны иметь хотя бы 5000 миньонокоинов на аккаунте, чтобы вывести деньги.</div>
+
+                        <button id="minion_next_btn" disabled style="background:#f1f1f1;border: 0.3vh solid black;font-size:3vh;border-radius:1vh;position:absolute;bottom:2vh;right:2vh;padding:1vh;">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display:flex;gap:3%;padding:1.5vh 3vh">
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh">
+
+                <div class="label">5. PF LDJHWS HJNTY,THUF!!!!</div>
+                <div style="border-radius:1vh;font-size:40vh;text-align:center;background:black;border-radius:2vh;">
+                    <a href="https://контрактмо.рф/" style="color:red;text-decoration:none;" target="_blank">?</a>
+                </div>
+            </div>
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh;">
+                <div class="label">6. Искать эльдорадо на велосипеде</div>
+                <div id="velosiped_game" style="position:relative;height:44vh;overflow:hidden;border:0.1vh solid black;border-radius:2vh;padding:1vh">
+                    <button id="start_velosiped" style="font-size:5vh;padding:2vh;border: 1vh solid black;background:red;color:white;border-radius:2vh;margin-top:15vh;width:100%;">
+                        В поисках святой пещеры...
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="display:flex;gap:3%;padding:1.5vh 3vh">
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh">
+
+                <div class="label">7. Ответить мне в тг (часть 1).</div>
+                <div class="telegram" style="height:47vh;background:#234569;border:0.1vh solid black;border-radius:2vh;position:relative;padding:1vh;display:flex;flex-direction:column;gap:0.3vh">
+                    <img id="zakladka" style="position:absolute;top:-7vh;height:40vh;right:7vh;" src="static/images/zakladka.png">
+                    <div>⭐Работа курьером⭐</div>
+                    <div>💸Вам дается фото с описанием места, где лежит товар.</div>
+                    <div>😊Вы должны разложить его по местам и скинуть мне фото!</div>
+                    <div>💎 ЗП в неделю составит от 70 000 рублей и это не предел!</div>
+                    <div>💎 ЗП за одну закладку 300-600 рублей</div>
+                    <div>💎 ЗП 2 раза в неделю</div>
+                    <div>👩‍💻 Проведем полный инструктаж</div>
+                    <div>🔄 Гибкий график</div>
+                    <div>⌚ минимум 4 дня в неделю.</div>
+                    <a href="https://youtu.be/e4k9pS1lsmU?si=wRmowgXjtDl6Jqaw" target="_blank" style="margin-top:3vh;width:10vh;background:#070;font-size:2vh;text-align:center;text-decoration:none;color:white;padding:3vh 1vh;border-radius:2vh">Согласён на фсё</a>
+                </div>
+            </div>
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh">
+                <div class="label">8. Ответить мне в тг (часть 2).</div>
+                <div class="telegram" style="height:47vh;background:#234569;border:0.1vh solid black;border-radius:2vh;position:relative;padding:1vh;display:flex;flex-direction:column;gap:0.3vh">
+                    <img id="krokus" style="position:absolute;right:1vh;height:40vh;border-radius:3vh;" src="static/images/krokus.png">
+
+                    <div>Разведка стратегического объекта - от 100 $.</div>
+                    <div>Слежка - от 100$</div>
+                    <div>Диверсия на ЖД, ЛЭП и пр. - от 500$.</div>
+                    <div>Поджог релейного шкафа - 200$</div>
+                    <div>Диверсия на стратегическом объекте - от 500$</div>
+                    <div>Поджог военкомата - от 1000$</div>
+                    <div>Поджог авто Zетника - 300$</div>
+                    <div>Поджог авто офицера СС(силовых структур) - 500$</div>
+                    <div>Поджог частного дома Zетника - 500$</div>
+                    <div>Поджог Сиверское ш, д. 31Б, кв 14 - бесценно.</div>
+                    <a href="https://www.youtube.com/watch?v=x_zxIX8DgSU" target="_blank" style="margin-top:3vh;width:10vh;background:#070;font-size:2vh;text-align:center;text-decoration:none;color:white;padding:3vh 1vh;border-radius:2vh">Согласён на фсё</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:flex;gap:3%;padding:1.5vh 3vh">
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh;position:relative;">
+
+                <div class="label">9. Найти крысу в бургере и выгодно её продать.</div>
+                <div id="burger_game" class="montserrat" style="height:32vh;border-radius:2vh;font-weight:400;font-size:8vh;border:0.3vh solid black;padding:0.3vh;border-bottom:15vh solid #964b00;">
+                    <div style="display:flex;gap:5%;">
+                        <div>Урок <span id="lesson">1</span>:</div>
+                        <div style="display:flex;flex-direction:column;margin-left:2vh">
+                            <span>Голод: <span id="famine">0</span>%</span>
+                            <span>Рассудок: <span id="mind">100</span>%</span>
+                        </div>
+                    </div>
+                    <img class="on_hover_scale" id="burger" src="static/images/burger.png" style="height:20vh;position:absolute;bottom:6vh;left:20%;cursor:pointer">
+                    <img class="on_hover_scale" id="cola" src="static/images/cola.png" style="height:20vh;position:absolute;bottom:6vh;left:60%;cursor:pointer">
+                    <div id="burger_death" class="absolute_center" style="color:red;font-weight:600;background:black;font-size:7vh;transform: translate(-50%,0%);"></div>
+                </div>
+                <button id="burger_start" class="absolute_center" style="border: 0.5vh solid black;border-radius:1vh;background:red;color:white;font-size:7vh;width:40vh;height:20vh">Начать</button>
+
+            </div>
+            <div style="display:flex;flex-direction:column;width:47%;gap:0.5vh;position:relative;">
+                <div class="label">10. Выиграть 100 рублей у шарлатана на улице(проиграв 200)</div>
+                <div style="height:32vh;border-radius:2vh;border:0.3vh solid black;border-bottom:15vh solid gray;width:100%;padding:0.3vh;">
+                    <button id="easy_mode" style="position:absolute;right:3vh;top:5vh;background:green;font-size:4vh;border-radius:2vh;">Джокир режим</button>
+                    <div style="height:25vh;margin-top:15vh;display:flex;gap:0.5vh;margin-left:20vh;position:relative;">
+                        <div class="glass" style="position:absolute;">
+                            <img src="static/images/glass.png" style="height:25vh;width:100px">
+                            <div id="circle" style="height:8vh;width:8vh;border-radius:10vh;background:red;position:absolute;top:15.5vh;left:3vh;"></div>
+                        </div>
+                        <div class="glass" style="position:absolute;left:15vh;">
+                            <img src="static/images/glass.png" style="height:25vh;width:100px">
+                        </div>
+                        <div class="glass" style="position:absolute;left:30vh;">
+                            <img src="static/images/glass.png" style="height:25vh;width:100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="text-align:center;margin-top:3vh;font-size:3vh;margin-bottom:2vh;font-weight:600"><a href="#">1</a>, <a target="_blank" href="https://yaloshadka.pythonanywhere.com/">2</a> ... <a href="https://www.satanisgod.org/TRADITIONAL.html" target="_blank">666</a></div>
+        <hr style="margin:1vh;">
+        <div style="margin:1vh;font-weight:600">©Все данные не защищены! Мы продаём информацию о вас правительству СОЕДИНЁННЫХ ШТАТОВ АМЕРИКИ!!!</div>
+    </body>
+</html>
